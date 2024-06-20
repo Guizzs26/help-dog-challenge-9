@@ -35,14 +35,141 @@ body {
   font-weight: 400;
   line-height: 1;
 
+  display: flex;
+
+  overflow-x: hidden;
+  position: relative;
+
   color: var(--dark);
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Pangolin", cursive;
+}
+
+/* Reusable classes */
+
+/* .grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+/*********/
+/* HERO */
+/*******/
+
+.hero {
+  width: 100%;
+  max-width: 150.598rem;
+  height: 72.174rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 9.6rem;
+
+  margin-left: 35.002rem;
+  margin-right: 6.4rem;
+}
+
+/*  */
+
+.hero-left-box {
+  width: 45.6rem;
+  height: 46.8rem;
+}
+
+.logo-box {
+  width: 17.5rem;
+  height: 4.8rem;
+
+  margin-bottom: 11.5rem;
+}
+
+.text-btn-box {
+  width: 45.6rem;
+  height: 30.5rem;
+}
+
+.text-box {
+  width: 45.6rem;
+  height: 19.6rem;
+
+  margin-bottom: 4.8rem;
+}
+
+.hero-heading {
+  font-size: 4.8rem;
+  line-height: 57.6px;
+
+  margin-bottom: 2.4rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 28px;
+}
+
+.btn:link,
+.btn:visited {
+  width: 21.4rem;
+  height: 6.1rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 21.09px;
+
+  display: inline-block;
+
+  padding: 2rem 4rem;
+
+  color: var(--white);
+  background-color: var(--navy-blue);
+}
+
+/*  */
+
+.hero-right-box {
+  width: 95.398rem;
+  height: 72.174rem;
+}
+
+.hero-img-box {
+  width: 71.02rem;
+  height: 60.55rem;
+
+  margin-top: 11.6rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.yellow-element {
+  width: 128rem;
+  height: 50rem;
+
+  position: absolute;
+  top: 40px;
+  left: 720px;
+
+  transform: rotate(-17.91deg);
+
+  border-radius: 500px 0px 0px 500px;
+
+  z-index: -1;
+  opacity: 1;
+  background: #fff1a6;
 }
