@@ -117,12 +117,19 @@ h3 {
 
   display: inline-block;
 
+  transition: transform 0.3s ease;
+
   border: none;
   border-radius: 5px;
   padding: 2rem 4rem;
 
   color: var(--white);
   background-color: var(--navy-blue);
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.1);
 }
 
 /*  */
