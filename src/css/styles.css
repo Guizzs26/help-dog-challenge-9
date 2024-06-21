@@ -35,33 +35,18 @@ body {
   font-weight: 400;
   line-height: 1;
 
-  display: flex;
-
   overflow-x: hidden;
-  position: relative;
 
   color: var(--dark);
 }
+
+/* Reusable */
 
 h1,
 h2,
 h3 {
   font-family: "Pangolin", cursive;
 }
-
-/* Reusable classes */
-
-/* .grid {
-  display: grid;
-}
-
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-} */
 
 /*********/
 /* HERO */
@@ -132,6 +117,8 @@ h3 {
 
   display: inline-block;
 
+  border: none;
+  border-radius: 5px;
   padding: 2rem 4rem;
 
   color: var(--white);
@@ -172,4 +159,122 @@ h3 {
   z-index: -1;
   opacity: 1;
   background: #fff1a6;
+}
+
+/*********/
+/* MAIN */
+/*******/
+
+.section-main {
+  background-color: rgba(18, 76, 95, 0.05);
+
+  margin-bottom: 8rem;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 138.017rem;
+  height: 75.073rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.7rem;
+
+  margin-right: 35.983rem;
+  margin-left: 18rem;
+}
+
+.main-left-box {
+  width: 76.117rem;
+  height: 75.073rem;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+}
+
+.main-right-box {
+  width: 59.2rem;
+  height: 34.9rem;
+}
+
+.main-heading {
+  font-size: 3.2rem;
+  line-height: 38.4px;
+
+  margin-bottom: 2.4rem;
+}
+
+.main-description {
+  font-size: 2rem;
+  line-height: 28px;
+
+  margin-bottom: 4.8rem;
+}
+
+.main-btn {
+  text-align: center;
+}
+
+/*************/
+/* PRODUCTS */
+/***********/
+
+.products-container {
+  width: 121.6rem;
+  height: 62.349rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+
+  margin-right: 35.2rem;
+  margin-left: 35.2rem;
+  margin-bottom: 8rem;
+}
+
+.product-card {
+  width: 38.4rem;
+  height: 62.266rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  width: 33.353rem;
+  height: 36.666rem;
+
+  margin-bottom: 4.7rem;
+}
+
+.text-btn-box {
+  width: 38.4rem;
+  height: 20.9rem;
+}
+
+.product-heading {
+  font-size: 3.2rem;
+  line-height: 40px;
+
+  margin-bottom: 1.2rem;
+}
+
+.product-description {
+  font-size: 2rem;
+  line-height: 28px;
+
+  margin-bottom: 4rem;
+}
+
+.product-btn:link,
+.product-btn:visited {
+  text-align: center;
+
+  width: 100%;
 }
