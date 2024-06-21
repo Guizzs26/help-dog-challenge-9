@@ -48,6 +48,34 @@ h3 {
   font-family: "Pangolin", cursive;
 }
 
+.btn:link,
+.btn:visited {
+  width: 21.4rem;
+  height: 6.1rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 21.09px;
+
+  display: inline-block;
+
+  transition: transform 0.3s ease;
+
+  border: none;
+  border-radius: 5px;
+  padding: 2rem 4rem;
+
+  color: var(--white);
+  background-color: var(--navy-blue);
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.1);
+}
+
 /*********/
 /* HERO */
 /*******/
@@ -102,34 +130,6 @@ h3 {
 .hero-description {
   font-size: 2rem;
   line-height: 28px;
-}
-
-.btn:link,
-.btn:visited {
-  width: 21.4rem;
-  height: 6.1rem;
-
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 21.09px;
-
-  display: inline-block;
-
-  transition: transform 0.3s ease;
-
-  border: none;
-  border-radius: 5px;
-  padding: 2rem 4rem;
-
-  color: var(--white);
-  background-color: var(--navy-blue);
-}
-
-.btn:hover,
-.btn:active {
-  transform: scale(1.1);
 }
 
 /*  */
